@@ -1,0 +1,8 @@
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  let array=[];
+  for (let i = 0; i < num; i++) array[i] = str;
+  return array.join("");
+}
+
+repeatStringNumTimes("abc", 3);
