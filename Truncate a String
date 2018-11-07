@@ -1,7 +1,6 @@
 function truncateString(str, num) {
   // Clear out that junk in your trunk
   let newStr = str.slice(0,num);
-  console.log(newStr.length);
   if ( newStr < str ) newStr += "...";
   return newStr;
 }
