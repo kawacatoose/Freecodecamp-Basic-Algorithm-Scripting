@@ -1,6 +1,5 @@
-function titleCase(str) {
-  str = str.toLowerCase();  
-  let words = str.split(" ");
+function titleCase(str) {   
+  let words = str.toLowerCase().split(" ");
   for (let i = 0; i < words.length; i++) {
     let letters = words[i].split("");
     letters[0] = letters[0].toUpperCase();
