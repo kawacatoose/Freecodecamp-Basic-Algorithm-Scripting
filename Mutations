@@ -1,0 +1,19 @@
+function mutation(arr) {
+  let lettersFirstWord = arr[0].toLowerCase().split("");
+  let lettersSecondWord = arr[1].toLowerCase().split("");
+  let correctLetters = 0;
+  for (let i = 0; i < lettersSecondWord.length; i++) {
+    for (let j = 0; j < lettersFirstWord.length; j++) {
+      if (lettersSecondWord[i] === lettersFirstWord[j]) {
+        correctLetters++;
+        break;
+      }
+    }
+  }
+  if (correctLetters === lettersSecondWord.length) {
+    return true;
+  } 
+  return false;
+}
+
+mutation(["floor", "for"]);
